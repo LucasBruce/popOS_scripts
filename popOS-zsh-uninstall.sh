@@ -14,7 +14,7 @@ function echo_error() { echo -e "\e[31m[✖]\e[0m $1"; }
 
 # --- Verifica root ---
 if [ "$EUID" -ne 0 ]; then
-  echo_error "Execute este script com sudo `ou como root."
+  echo_error "Execute este script com sudo ou como root."
   exit 1
 fi
 
